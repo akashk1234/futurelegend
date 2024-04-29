@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Future Legend</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/libs/OwlCarousel-2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/iconfont/tabler-icons.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!------------------------------>
+    <!-- Header Start -->
+    <!------------------------------>
+    <header class="main-header position-fixed w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl py-0">
+                <div class="logo">
+                    <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/logo-2.png" alt="" width="130"></a>
+                </div>
+                <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"  data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="ti ti-menu-2 text-warning"></i>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#faq">FAQ </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#contact">Contact </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                       
+                            <a class="btn btn-secondary btn-hover-warning my-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            </a>
+          
+                            <a class="btn btn-outline-warning btn-hover-secondery text-capitalize mx-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin">
+                                <i class="ti ti-user"></i> Login
+                            </a>
+
+                            <a href="cart.html" class="mx-2" style="color: #ce9f2e; "><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <div class="logo">
+                    <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/Creato-logo.svg" alt=""></a>
+                </div> 
+                <a class="btn btn-secondary btn-hover-warning my-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                </a>
+                <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-warning"></i></button>
+            </div>
+            <div class="offcanvas-body pt-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">FAQ </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">Contact </a>
+                    </li>
+                    
+                </ul>
+                <div class="login d-block align-items-center mt-3">
+                    <a class="btn btn-warning text-capitalize" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin">
+                        <i class="ti ti-user"></i> Login
+                    </a>
+
+                    <a href="cart.html" class="mx-5" style="color: #ce9f2e; "><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!------------------------------>
+     <!-- Header End  -->
+    <!------------------------------>
+    
+    
+    <style>
+        .price2 h4{
+            text-decoration: line-through;
+        }
+    </style>
+        
+      
+      <!-- content -->
+      <section class="p-md-5" style="margin-top: 100px;">
+        <div class="container">
+          <div class="row gx-5">
+            <aside class="col-lg-6 col-md-6">
+              <div class=" rounded-4 mb-3 d-flex justify-content-center">
+                <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image">
+                  <img style="width: 100%; max-height: 100vh; margin: auto;" class="rounded-4 fit" src="assets/images/notebook-img.jpg" />
+                </a>
+              </div>
+              
+              <!-- gallery-wrap .end// -->
+            </aside>
+            <main class="col-lg-6 col-md-6">
+                <h3 class="title text-dark" style="color: #001C68;">Notebook 01</h3>
+                <hr>
+                <div class="price2 d-flex align-items-center">
+                    <h4 class="text-muted">₹65</h4>
+                    <h2 class="mx-3" style="color: #001C68;"><b>₹45</b></h2>
+                    <h5 class="text-muted">40% Off</h5>
+                </div>
+                <hr>
+                <div class="row">
+                  <dt class="col-3">Ruling:</dt>
+                  <dd class="col-9">Ruled</dd>
+      
+                  <dt class="col-3">Pages:</dt>
+                  <dd class="col-9">172</dd>
+      
+                  <dt class="col-3">Size:</dt>
+                  <dd class="col-9">Normal</dd>
+      
+                  <dt class="col-3">Quantity:</dt>
+                  <dd class="col-9">Pack of 4</dd>
+                </div>
+      
+                <hr />
+                <div >
+                    <h6>Description</h6>
+                    <small style="line-height: 1.3; color: rgb(91, 91, 91);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, eveniet dolor perspiciatis iure </small>
+                </div>
+                <hr>
+                <div class="row mb-2">
+                  
+                    <div class="mb-3">
+                        <label class="mb-3 d-block">Quantity <small style="color: rgb(141, 141, 141);">(Pack of <span id="qty">4</span>)</small></label>
+                        <div class="input-group mb-3" style="width: 170px;">
+                            <button class="btn btn-white border border-secondary px-3 decrease-button" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="text" class="form-control text-center border border-secondary quantity-input" placeholder="1" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                            <button class="btn btn-white border border-secondary px-3 increase-button" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="mb-3">
+                    <a href="#" class="btn btn-warning shadow-0"> Buy now </a>
+                    <a href="#" class="btn btn-primary shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a>
+                </div>
+            </main>
+          </div>
+        </div>
+      </section>
+      <!-- content -->
+      
+      <script>
+        // Get the input field and buttons
+        var quantityInput = document.querySelector('.quantity-input');
+        var decreaseButton = document.querySelector('.decrease-button');
+        var increaseButton = document.querySelector('.increase-button');
+        var qtySpan = document.getElementById('qty'); // Get the span element
+    
+        // Add event listeners to the buttons
+        decreaseButton.addEventListener('click', decreaseQuantity);
+        increaseButton.addEventListener('click', increaseQuantity);
+    
+        // Function to decrease the quantity
+        function decreaseQuantity() {
+            var currentValue = parseInt(quantityInput.value);
+            if (!isNaN(currentValue) && currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+                updateQtySpan(quantityInput.value); // Update the qty span when quantity is decreased
+            }
+        }
+    
+        // Function to increase the quantity
+        function increaseQuantity() {
+            var currentValue = parseInt(quantityInput.value);
+            if (!isNaN(currentValue)) {
+                quantityInput.value = currentValue + 1;
+                updateQtySpan(quantityInput.value); // Update the qty span when quantity is increased
+            } else {
+                // If the input value is not a number, set it to 1
+                quantityInput.value = 1;
+                updateQtySpan(quantityInput.value); // Update the qty span when quantity is set to 1
+            }
+        }
+    
+        // Function to update the qty span
+        function updateQtySpan(value) {
+            qtySpan.textContent = value * 4; // Multiply the quantity by 4 and update the span content
+        }
+    </script>
+    
+    <style>
+        .product-card{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .product-card:hover{
+            transform: scale(0.99);
+            transition: .4s;
+        }
+
+        .product-img{
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .price small{
+            color: rgb(139, 139, 139);
+            font-weight: 800;
+            text-decoration: line-through;
+            margin: 8px;
+        }
+
+        .price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .add-to-cart{
+            width: 100%;
+            border: 1px solid #001C68;
+            border-radius: 20px;
+            color: #001C68;
+        }
+
+        .add-to-cart:hover{
+            border: 1px solid rgb(147, 147, 147);
+            color: rgb(99, 99, 99);
+        }
+        
+    </style>
+    <hr>
+    <div class="container px-md-5 mb-4">
+        <h3 class="text-center">Related Products</h3>
+        <div class="row">
+            <div class="col-md-3 col-lg-3 p-3">
+                <a href="single.html" style="text-decoration: none;">
+                    <div class="product-card p-3">
+                        <div class="">
+                            <img class="product-img" src="assets/images/notebook-img.jpg" alt="">
+                        </div>
+                        <p class="text-center mt-4">Notebook 01</p>
+                        <div class="price">
+                            <small>₹65</small>
+                            <h4 ><b>₹45</b></h4>
+                            <small>40% off</small>
+                        </div>
+    
+                        <button class="add-to-cart mt-2 py-2">Add to cart <i class="fa fa-cart-plus"></i></button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3 col-lg-3 p-3">
+                <div class="product-card p-3">
+                    <div class="">
+                        <img class="product-img" src="assets/images/notebook-img2.jpg" alt="">
+                    </div>
+                    <p class="text-center mt-4">Notebook 01</p>
+                    <div class="price">
+                        <small>₹65</small>
+                        <h4 ><b>₹45</b></h4>
+                        <small>40% off</small>
+                    </div>
+
+                    <button class="add-to-cart mt-2 py-2">Add to cart <i class="fa fa-cart-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3 p-3">
+                <div class="product-card p-3">
+                    <div class="">
+                        <img class="product-img" src="assets/images/notebook-img3.jpg" alt="">
+                    </div>
+                    <p class="text-center mt-4">Notebook 01</p>
+                    <div class="price">
+                        <small>₹65</small>
+                        <h4 ><b>₹45</b></h4>
+                        <small>40% off</small>
+                    </div>
+
+                    <button class="add-to-cart mt-2 py-2">Add to cart <i class="fa fa-cart-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3 p-3">
+                <div class="product-card p-3">
+                    <div class="">
+                        <img class="product-img" src="assets/images/notebook-img4.jpg" alt="">
+                    </div>
+                    <p class="text-center mt-4">Notebook 01</p>
+                    <div class="price">
+                        <small>₹65</small>
+                        <h4 ><b>₹45</b></h4>
+                        <small>40% off</small>
+                    </div>
+
+                    <button class="add-to-cart mt-2 py-2">Add to cart <i class="fa fa-cart-plus"></i></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+      
+      
+
+    <!------------------------------>
+    <!-----Footer Start------------->
+    <!------------------------------>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="footer-logo-col">
+                        <a href="#"><img src="assets/images/logo.png" width="200"></a>
+                    </div>
+                </div>
+                
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#" >Refund & Return policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Connect</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li style="line-height: 1.7;"><a href="#"><i class="fa-solid fa-location-dot"></i> CCRA-15, Kumbalapilly Road, <br> Chalikkavattom, Kochi - 682028</a></li>
+                        <li><a href="mailto:future.legend2025@gmail.com"><i class="fa fa-envelope"></i> future.legend2025@gmail.com</a></li>
+                        <li><a href="tel:+919745530072"><i class="fa fa-phone"></i> +91 9745530072</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center py-3">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp fa-2x text-white mx-2"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram fa-2x text-white mx-2"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook fa-2x text-white mx-2"></i>
+                </a>
+            </div>
+            <div class="copyrights text-center blue-light  fw-500">@<span id="autodate">2024</span> - All Rights Reserved by Future Legend</div>
+        </div>
+    </footer>
+    <!------------------------------>
+    <!-------Footer End------------->
+    <!------------------------------>
+
+
+  
+   
+    <style>
+        .e-card {
+        background: transparent;
+        box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+        position: relative;
+        height: 150px;
+        border-radius: 16px;
+        overflow: hidden;
+        /* border: .5px solid #6c6c6c; */
+        }
+        .wave2{
+            background: linear-gradient(744deg,#ffaf03,#f3c742 60%,#e7eb00) !important;
+        }
+
+        .wave {
+        position: absolute;
+        width: 640px;
+        height: 700px;
+        opacity: 0.6;
+        left: 0;
+        top: 0;
+        margin-left: -50%;
+        margin-top: -70%;
+        background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+        }
+
+        .icon {
+        width: 3em;
+        margin-top: -1em;
+        padding-bottom: 1em;
+        }
+
+        .infotop {
+        text-align: center;
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        }
+
+        .name {
+        font-size: 14px;
+        font-weight: 100;
+        position: relative;
+        text-transform: lowercase;
+        }
+
+        .wave:nth-child(2),
+        .wave:nth-child(3) {
+        top: 210px;
+        }
+
+        .playing .wave {
+        border-radius: 40%;
+        animation: wave 3000ms infinite linear;
+        }
+
+        .wave {
+        border-radius: 40%;
+        animation: wave 55s infinite linear;
+        }
+
+        .playing .wave:nth-child(2) {
+        animation-duration: 4000ms;
+        }
+
+        .wave:nth-child(2) {
+        animation-duration: 50s;
+        }
+
+        .playing .wave:nth-child(3) {
+        animation-duration: 5000ms;
+        }
+
+        .wave:nth-child(3) {
+        animation-duration: 45s;
+        }
+
+        @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+        .e-card:hover{
+            transform: scale(0.97);
+            transition: .3s;
+        }
+    </style>
+    <!-- Select type Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background: rgb(255, 255, 255); border-radius: 30px;">
+                
+                <div class="modal-body p-4">
+                    <h4 class="text-center mb-4" style="color: rgb(184, 184, 184);"><b>Choose Your Choice</b></h4>
+
+                    <a href="notebook.html" class="sel">
+                        <div class="e-card playing my-2">
+                            <div class="image"></div>
+                            
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            
+                          
+                            <div class="infotop p-4">
+                                <div class="name">Notebook Designing</div>
+                                <h3>Personalize Your Note Book Cover</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="sel">
+                        <div class="e-card playing my-4">
+                            <div class="image"></div>
+                            
+                            <div class="wave wave2"></div>
+                            <div class="wave wave2"></div>
+                            <div class="wave wave2"></div>
+                            
+                          
+                            <div class="infotop p-4">
+                                <div class="name">Nameslip Designing</div>
+                                <h3>Make Your Mark With Custom Nameslips</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <style>
+        .login {
+        color: #e8e8e8;
+        font-size: 1.3em;
+        }
+
+.login input[type="text"],
+.login input[type="password"] {
+  opacity: 1;
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 13px 18px;
+  font-size: 0.8em;
+  border-radius: 100px;
+  background: #eeeeee;
+  color: #6e6e6e;
+}
+
+.login input:focus {
+  animation: bounce 1s;
+  -webkit-appearance: none;
+}
+
+.login input[type=submit],
+.login input[type=button],
+.h1 {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 13px;
+  margin: 30px 0 0 0;
+  border-radius: 500px;
+  font-weight: 700;
+  animation: bounce2 1.6s;
+}
+
+.h1 {
+  position: relative;
+  top: -45px;
+  display: block;
+  margin-bottom: -0px;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+
+.login input[type=text] {
+  animation: bounce 1s;
+  -webkit-appearance: none;
+}
+
+.login input[type=password] {
+  animation: bounce1 1.3s;
+}
+
+.btn2{
+    background: black;
+    color: #fff;
+}
+
+.reg{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    animation: bounce1 1.5s;
+}
+
+.forgot{
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+    margin-top: 10px;
+    margin-left: 10px;
+    animation: bounce1 1.5s;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce1 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+    </style>
+    <!-- login modal -->
+    <div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+               
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <div class="h1">Log in</div>
+                        <input placeholder="Email" id="email" name="email" type="text">
+                        <input placeholder="Password" id="password" class="mt-3" name="password" type="password">
+                        <p class="forgot" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterEmail">Forgot password?</p>
+                        <input value="Login" class="btn2 py-4" type="submit">
+
+                        <p class="reg mt-5">Don't have an account? <a href="" style="text-decoration: none;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterRegister"><b>Register</b></a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Register modal -->
+    <div class="modal fade" id="exampleModalCenterRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+               
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <div class="h1">Register</div>
+                        <input placeholder="Email" id="email" name="email" type="text">
+                        <input placeholder="Password" id="password" class="mt-3" name="password" type="password">
+                        <input placeholder="Confirm Password" id="password" class="mt-3" name="password" type="password">
+                        <input value="Login" class="btn2 py-4" type="submit">
+
+                        <p class="reg mt-5">Already have an account? <a href="" style="text-decoration: none;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin"><b>Login</b></a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot password, email modal -->
+    <div class="modal fade" id="exampleModalCenterEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <h3 class="text-center mb-4">Verify Email</h3>
+                        <input placeholder="Registered Email" id="email" name="email" type="text">
+                        <input value="Send OTP" class="btn2 py-4" type="submit" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterOTP">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .password2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.password2 input {
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px rgb(20, 181, 230);
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  outline: none;
+}
+    </style>
+    <!-- Forgot password, email confirmation using otp modal -->
+    <div class="modal fade" id="exampleModalCenterOTP" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <h3 class="text-center mb-4">Enter OTP</h3>
+                        <div class="password2">
+                            <input maxlength="1" value="5" class="input" name="text" type="text" />
+                            <input maxlength="1" value="7" class="input" name="text" type="text" />
+                            <input maxlength="1" value="1" class="input" name="text" type="text" />
+                            <input maxlength="1" value="6" class="input" name="text" type="text" />
+                            
+                        </div>
+                          
+                        <input value="Confirm" class="btn2 py-4" type="submit" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterReset">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot password, email modal -->
+    <div class="modal fade" id="exampleModalCenterReset" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <h3 class="text-center mb-4">Reset Password</h3>
+                        <input placeholder="Enter new password" id="password" name="password" type="password">
+                        <input placeholder="Confirm password" class="mt-3" id="password" name="password" type="password">
+                        <input value="Reset Password" class="btn2 py-4" type="submit" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterOTP">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/libs/OwlCarousel-2/dist/owl.carousel.min.js"></script>
+    <script src="dist/js/custom.js"></script>
+
+</body>
+</html>

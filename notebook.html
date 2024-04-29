@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Future Legend</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/libs/OwlCarousel-2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/iconfont/tabler-icons.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!------------------------------>
+    <!-- Header Start -->
+    <!------------------------------>
+    <header class="main-header position-fixed w-100">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl py-0">
+                <div class="logo">
+                    <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/logo-2.png" alt="" width="130"></a>
+                </div>
+                <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"  data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="ti ti-menu-2 text-warning"></i>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#faq">FAQ </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize" href="#contact">Contact </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center">
+                       
+                            <a class="btn btn-secondary btn-hover-warning my-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                            </a>
+          
+                            <a class="btn btn-outline-warning btn-hover-secondery text-capitalize mx-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin">
+                                <i class="ti ti-user"></i> Login
+                            </a>
+
+                            <a href="cart.html" class="mx-2" style="color: #ce9f2e; "><i class="fa fa-shopping-cart"></i></a>
+                        </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <div class="logo">
+                    <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/Creato-logo.svg" alt=""></a>
+                </div> 
+                <a class="btn btn-secondary btn-hover-warning my-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                    Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                </a>
+                <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-warning"></i></button>
+            </div>
+            <div class="offcanvas-body pt-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">FAQ </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#">Contact </a>
+                    </li>
+                    
+                </ul>
+                <div class="login d-block align-items-center mt-3">
+                    <a class="btn btn-warning text-capitalize" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin">
+                        <i class="ti ti-user"></i> Login
+                    </a>
+
+                    <a href="cart.html" class="mx-5" style="color: #ce9f2e; "><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!------------------------------>
+    <!-- Header End -->
+    <!------------------------------>
+
+    <style>
+        .card-container{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-bottom: 40px;
+            border-radius: 40px;
+        }
+
+        .input {
+        max-width: 190px;
+        display: none;
+        }
+
+        .labelFile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px dashed #001C68;
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        color: #404040;
+        cursor: pointer;
+        }
+
+    </style>
+
+    <div class="container" style="margin-top: 140px;">
+        <style>
+            input[type="radio"] {
+            display: none;
+            &:not(:disabled) ~ label {
+                cursor: pointer;
+            }
+
+            }
+            label {
+            display: block;
+            background: white;
+            border: 2px solid rgb(209, 208, 208);
+            border-radius: 10px;
+            text-align: center;
+            align-items: center;
+            }
+            input[type="radio"]:checked + label {
+            background: hsla(150, 75%, 50%, 1);
+            color: hsla(215, 0%, 100%, 1);
+            border: 1px solid hsla(150, 7                                                                                                                                                                                                                                                                                             5%, 50%, 1);
+            }
+
+            .option{
+                border: 2px solid rgb(224, 224, 224);
+                border-radius: 10px;
+            }
+            .option-head{
+                color: rgb(168, 168, 168);
+            }
+
+            .custom-col {
+    height: 100%; /* Set the desired height */
+    max-height: none; /* Override any max-height property */
+}
+
+        </style>
+    
+    <div class="card-container p-4">
+        <div class="row">
+            <div class="col-md-12 col-lg-4 border-end" style="border-color: rgb(223, 223, 223) !important; ">
+    
+                <div class="options p-3">
+                    <h5 class="text-center mb-3"><b>Notebook Specifications</b></h5>
+                    
+                    <!-- ruling -->
+                    <div class="option row py-3 align-items-center mb-3">
+                        <b class="option-head mb-3 text-center">Ruling</b>
+                        <div class="col-6">
+                            <input type="radio" id="ruled" name="ruling" value="ruled">
+                            <label class="py-3" for="ruled">
+                                <small class="mt-2">Ruled</small>
+                            </label>
+                        </div>
+                        <div class="col-6">
+                            <input type="radio" id="unruled" name="ruling" value="unruled">
+                            <label class="py-3" for="unruled">
+                                <small class="mt-2">Unruled</small>
+                            </label>
+                        </div>
+                    </div>
+                
+                    <!-- pages -->
+                    <div class="option row py-3 align-items-center mb-3">
+                        <b class="option-head mb-3 text-center">Pages</b>
+                        <div class="col-6">
+                            <input type="radio" id="pages100" name="pages" value="88">
+                            <label class="py-3" for="pages100">
+                                <small class="mt-2">88</small>
+                            </label>
+                        </div>
+                        <div class="col-6">
+                            <input type="radio" id="pages200" name="pages" value="172">
+                            <label class="py-3" for="pages200">
+                                <small class="mt-2">172</small>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- size -->
+                    <div class="option row py-3 align-items-center mb-3">
+                        <b class="option-head mb-3 text-center">Size</b>
+                        <div class="col-6 mb-2">
+                            <input type="radio" id="normal" name="size" value="100">
+                            <label class="py-3" for="normal">
+                                <small class="mt-2">Normal</small>
+                            </label>
+                        </div>
+                        <div class="col-6">
+                            <input type="radio" id="long" name="size" value="200">
+                            <label class="py-3" for="long">
+                                <small class="mt-2">Long</small>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!-- quantity -->
+                    <div class="option row py-3 align-items-center mb-3">
+                        <b class="option-head mb-3 text-center">Quantity</b>
+                        <div class="col-12">
+                            <input type="radio" id="pack4" name="quantity" value="100" >
+                            <label class="py-3" for="pack4">
+                                <small class="mt-2">Pack of 4</small>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="upload">
+                        <label for="file" class="labelFile p-4">
+                            <span><i class="fas fa-arrow-up fa-2x mb-3" style="color: #001C68;"></i></span>
+                            <p style="color: #001C68;">Browse and choose the image(1:1 ratio) you want to upload</p>
+                        </label>
+                        <input class="input" name="text" id="file" type="file" onchange="displayImage(event)"/>
+                    </div>
+                </div>
+                
+            </div>
+    
+    
+            <div class="col-md-12 col-lg-8 align-items-start px-5">
+                    
+                <div class="d-flex justify-content-center p-md-5">
+                    <div class="px-md-5 w-100">
+                        <div class="img-container d-flex align-items-center " style="position: relative;">
+                           
+                                <img src="" class="img mt-5" style="width: 100%;" alt="">
+                           
+                            <img src="assets/images/frame.png" class="frame" style="width: 100%; top: 0; left: 0; " alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="my-5">
+            <button class="btn btn-primary w-100">Check out <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+    </div>
+
+
+    
+    <script>
+        function displayImage(event) {
+            const input = event.target;
+            const img = document.querySelector('.img');
+            const frame = document.querySelector('.frame');
+
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    img.src = e.target.result;
+                    frame.style.position = 'absolute'; // Set position to absolute when image is uploaded
+                }
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                // If no files are selected
+                img.src = '';
+                frame.style.position = 'relative'; // Set position to relative when no image is uploaded
+            }
+        }  
+        
+        
+
+    </script>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="footer-logo-col">
+                        <a href="#"><img src="assets/images/logo.png" width="200"></a>
+                    </div>
+                </div>
+                
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#" >Refund & Return policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Connect</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li style="line-height: 1.7;"><a href="#"><i class="fa-solid fa-location-dot"></i> CCRA-15, Kumbalapilly Road, <br> Chalikkavattom, Kochi - 682028</a></li>
+                        <li><a href="mailto:future.legend2025@gmail.com"><i class="fa fa-envelope"></i> future.legend2025@gmail.com</a></li>
+                        <li><a href="tel:+919745530072"><i class="fa fa-phone"></i> +91 9745530072</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center py-3">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp fa-2x text-white mx-2"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram fa-2x text-white mx-2"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook fa-2x text-white mx-2"></i>
+                </a>
+            </div>
+            <div class="copyrights text-center blue-light  fw-500">@<span id="autodate">2024</span> - All Rights Reserved by Future Legend</div>
+        </div>
+    </footer>
+    <!------------------------------>
+    <!-------Footer End------------->
+    <!------------------------------>
+
+   
+   
+    
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/libs/OwlCarousel-2/dist/owl.carousel.min.js"></script>
+    <script src="dist/js/custom.js"></script>
+
+</body>
+</html>

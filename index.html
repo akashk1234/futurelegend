@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Future Legend</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/libs/OwlCarousel-2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/iconfont/tabler-icons.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!------------------------------>
+        <!-- Header Start -->
+    <!------------------------------>
+    <header class="main-header position-fixed w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl py-0">
+                    <div class="logo">
+                        <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/logo-2.png" alt="" width="130"></a>
+                    </div>
+                    <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"  data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="ti ti-menu-2 text-warning"></i>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" href="shop.html">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" href="#faq">FAQ </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" href="#contact">Contact </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center">
+                           
+                                <a class="btn btn-secondary btn-hover-warning my-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                    Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                                </a>
+              
+                                <a class="btn btn-outline-warning btn-hover-secondery text-capitalize mx-2" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin">
+                                    <i class="ti ti-user"></i> Login
+                                </a>
+
+                                <a href="cart.html" class="mx-2" style="color: #ce9f2e; "><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <div class="logo">
+                        <a class="navbar-brand py-0 me-0" href="#"><img src="assets/images/Creato-logo.svg" alt=""></a>
+                    </div> 
+                    <a class="btn btn-secondary btn-hover-warning my-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    </a>
+                    <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-warning"></i></button>
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#">FAQ </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#">Contact </a>
+                        </li>
+                        
+                    </ul>
+                    <div class="login d-block align-items-center mt-3">
+                        <a class="btn btn-warning text-capitalize" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin">
+                            <i class="ti ti-user"></i> Login
+                        </a>
+
+                        <a href="cart.html" class="mx-5" style="color: #ce9f2e; "><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!------------------------------>
+     <!-- Header End  -->            
+    <!------------------------------>
+    <style>/* f7d932 */
+        .banner-p{
+            line-height: 1.5;
+        }
+        .btn-hover-secondery {
+            position: relative;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn-hover-secondery:hover .arrow {
+            transform: translateX(2px); /* Adjust the value as needed */
+        }
+        .card{
+            box-shadow: rgba(38, 0, 255, 0.155) 0px 10px 36px 0px, rgba(225, 225, 225, 0.311) 0px 0px 0px 1px !important;
+            margin-bottom: 20px;
+        }
+
+    </style>
+    <!------------------------------>
+    <!--- Hero Banner Start--------->
+    <!------------------------------>
+    <section class="hero-banner position-relative overflow-hidden">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="position-relative left-hero-color">
+                        <h1 class="mb-0 fw-bold mt-4">
+                            <span style="color: gray;">Welcome to</span> Future Legend
+                        </h1>
+                        <p class="banner-p">We believe in the power of self-expression. That's why we've crafted a platform 
+                            where you can turn ordinary stationery into extraordinary keepsakes.</p>
+                        <a href="#process" class="btn btn-warning btn-hover-secondery">
+                            Get Started <span class="d-inline-block me-2 arrow"><i class="ti ti-arrow-down"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="position-relative right-hero-color">
+                        <img src="assets/images/hero/right-image.svg" class="img-fluid"> 
+                    </div>          
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------>
+    <!--- Hero Banner End--------->
+    <!------------------------------>
+
+    <!------------------------------>
+    <!--- Service sectin Start------>
+    <!------------------------------>
+    <section class="service position-relative overflow-hidden" id="process">
+        <div class="container position-relative">
+            <img src="assets/images/service/dot-shape.png" class="shape position-absolute">
+            <div class="row">
+                <div class="col-12"><small class="fs-7 d-block">Working Process</small></div>
+                <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center ">
+                    <h2 class="fs-2 text-black mb-0">Make it your own <br> with just 4 simple steps</h2>
+                    <a href="#notebook-design" class="btn btn-warning btn-hover-secondery my-4">
+                        Get Started <span class="d-inline-block me-2 arrow"><i class="ti ti-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="row d-flex flex-wrap justify-content-center step-row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                                <i class="fa-solid fa-square-check text-warning position-relative"></i>
+                            </div>
+                            <h5 class="mb-0 fw-500">Step 1</h5>
+                            <h3 class="fs-4">Select Notebook Type</h3>
+                            <p class="fs-7 mb-0 fw-500">Discover the right notebook style to suit your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                                <i class="fa-solid fa-upload text-warning position-relative"></i>
+                            </div>
+                            <h5 class="mb-0 fw-500">Step 2</h5>
+                            <h3 class="fs-4">Upload Your Images</h3>
+                            <p class="fs-7 mb-0 fw-500">Select and upload your preferred images for your notebook.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                                <i class="fa-solid fa-magnifying-glass text-warning position-relative"></i>
+                            </div>
+                            <h5 class="mb-0 fw-500">Step 3</h5>
+                            <h3 class="fs-4">Preview Your Creation</h3>
+                            <p class="fs-7 mb-0 fw-500">Preview your design before finalizing your order.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                                <i class="fa-solid fa-cart-shopping text-warning position-relative"></i>
+                            </div>
+                            <h5 class="mb-0 fw-500">Step 4</h5>
+                            <h3 class="fs-4">Order with Confidence</h3>
+                            <p class="fs-7 mb-0 fw-500">Order confidently with our secure checkout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------>
+    <!--- Service sectin Start------>
+    <!------------------------------>
+    
+    <!---------------------------------->
+    <!--- Our Service sectin Start------>
+    <!---------------------------------->
+    <section class="our-service position-relative overflow-hidden" id="notebook-design">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <img src="assets/images/notebook.png" class="img-fluid"> 
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ps-4">
+                    <small class="fs-7 d-block">Notebook Designing</small>
+                    <h2 class="fs-2 text-black mb-0">Personalize Your Notebook Cover</h2>
+                    <p class="mb-0 fw-500 fs-7">
+                        Transform your plain notebook into a captivating masterpiece with our easy-to-use customization tools. 
+                        Whether you're an artist, a dreamer, or a memory collector, express yourself freely on the cover of your notebook.
+                    </p>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li class="d-flex flex-wrap align-items-start">
+                            <i class="ti ti-circle-check fs-4 pe-2"></i>
+                            <span class="fs-7 text-black">Personalize your notebook cover with photos, quotes, or designs.</span>
+                        </li>
+                        <li class="d-flex flex-wrap align-items-start">
+                            <i class="ti ti-circle-check fs-4 pe-2"></i>
+                            <span class="fs-7 text-black">Easily position, resize, and add text to create a unique design.</span>
+                        </li>
+                        <li class="d-flex flex-wrap align-items-start">
+                            <i class="ti ti-circle-check fs-4 pe-2"></i>
+                            <span class="fs-7 text-black">Durable construction ensures vibrant colors and long-lasting satisfaction.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="notebook.html" class="btn btn-warning btn-hover-secondery my-4 ">
+                        Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-crop"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="our-service position-relative overflow-hidden" style="background: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ps-xxl-0 ps-xl-0 ps-lg-3 ps-md-3 ps-sm-3 ps-3">
+                    <small class="fs-7 d-block">Name Slip Designing</small>
+                    <h2 class="fs-2 text-black mb-0">Make Your Mark with Custom Name Slips</h2>
+                    <p class="mb-0 fw-500 fs-7">
+                        Enhance your branding with our customizable name slips, ideal for networking events, workshops, or personal items.
+                    </p>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li class="d-flex flex-wrap align-items-start">
+                            <i class="ti ti-circle-check fs-4 pe-2"></i>
+                            <span class="fs-7 text-black">Customize with your name or logo in various fonts, colors, and sizes.</span>
+                        </li>
+                        <li class="d-flex flex-wrap align-items-start">
+                            <i class="ti ti-circle-check fs-4 pe-2"></i>
+                            <span class="fs-7 text-black">Advanced technology ensures clear and colorful prints every time.</span>
+                        </li>
+                        <li class="d-flex flex-wrap align-items-start">
+                            <i class="ti ti-circle-check fs-4 pe-2"></i>
+                            <span class="fs-7 text-black">Use on business cards, luggage tags, and more with ease.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <img src="assets/images/nameslip.png" class="img-fluid"> 
+                </div>
+                <div class="col-12 text-center">
+                    <a href="nameslip.html" class="btn btn-warning btn-hover-secondery my-4 ">
+                        Design Now <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-crop"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!------------------------------>
+    <!--- Our Service sectin End---->
+    <!------------------------------>
+    
+    <!------------------------------>
+    <!-- Portfolio section Start---->
+    <!------------------------------>
+    <section class="portfolio position-relative bg-primary">
+        <div class="container position-relative">
+            <div class="row">
+                <!-- <div class="col-12"><small class="fs-7 d-block text-warning">Product Docs</small></div> -->
+                <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center ">
+                    <h2 class="fs-3 text-white mb-0 text-center">Why Choose Us?</h2>
+                </div>
+            </div>
+            <div class="row d-flex flex-wrap justify-content-center step-row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card bg-transparent">
+                        <div class="card-body">
+                            <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-wand-magic-sparkles text-white" style="margin-top: 25px;"></i>
+                            </div>
+                            <h3 class="fs-4 text-white">Unleash Your Creativity</h3>
+                            <p class="fs-7 mb-0 fw-500">Design your own notebook covers and name slips with our easy-to-use customization tools. 
+                                Whether it's a cherished memory, a beloved pet, or a motivational quote, make it yours!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card bg-transparent">
+                        <div class="card-body">
+                            <div class="icon  mx-auto rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-crown text-white" style="margin-top: 25px;"></i>
+                            </div>
+                            <h3 class="fs-4 text-white">Quality You Can Trust</h3>
+                            <p class="fs-7 mb-0 fw-500">Crafted from premium materials, our custom creations are built to last. 
+                                From vibrant colors to durable finishes, every detail is meticulously chosen to ensure your satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card bg-transparent">
+                        <div class="card-body">
+                            <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-gifts text-white" style="margin-top: 25px;"></i>
+                            </div>
+                            <h3 class="fs-4 text-white">Perfect for Every Occasion</h3>
+                            <p class="fs-7 mb-0 fw-500">Whether it's a thoughtful gift for a loved one or a personal treat for yourself, 
+                                our custom stationery is ideal for birthdays, holidays, graduations, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative" >
+            <div class="row">
+                <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center ">
+                    <h2 class="fs-3 text-white mb-0 text-center mb-5">Purchase from Shop</h2>
+                </div>
+            </div>
+            <div class="portfolio-wrap">
+                <div class="owl-carousel owl-theme portfolio-slider">
+                        <div class="item"><a href="#"><img src="assets/images/notebook-img.jpg" class="w-75"></a></div>
+                        <div class="item"><a href="#"><img src="assets/images/notebook-img2.jpg" class="w-75"></a></div>
+                        <div class="item"><a href="#"><img src="assets/images/notebook-img3.jpg" class="w-75"></a></div>
+                        <div class="item"><a href="#"><img src="assets/images/notebook-img4.jpg" class="w-75"></a></div>
+                        <div class="item"><a href="#"><img src="assets/images/notebook-img.jpg" class="w-75"></a></div>
+                </div>
+            </div>  
+            <div class="text-center">
+                <a href="shop.html" class="btn btn-secondary btn-hover-warning mt-5">
+                    View Shop <span class="d-inline-block me-2 arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>  
+        </div>    
+    </section>
+    <!------------------------------>
+    <!-- Portfolio section End ----->
+    <!------------------------------>
+
+    
+    <!------------------------------>
+    <!------ FAQ section Start------>
+    <!------------------------------>
+    <section class="faq position-relative overflow-hidden" id="faq">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <small class="fs-7 d-block">Frequently Asked Questions</small>
+                    <h2 class="fs-3 text-black mb-0">Want to ask something from us?</h2>
+                </div>
+            </div>
+            <div class="accordion-block">
+                    <div class="accordion row" id="accordionPanelsStayOpenExample">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                  <button class="accordion-button text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    What type of images can I upload for customization?
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                  <div class="accordion-body fs-7 fw-500 pt-0">
+                                    You can upload JPEG or PNG images for customization. We recommend using high-resolution images for best results. 
+                                    Avoid copyrighted or inappropriate content.
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                  <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    How can I customize my notebook cover?
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                  <div class="accordion-body fs-7 fw-500 pt-0">
+                                    To customize your notebook cover, simply visit our "Customize Notebook Cover" page and follow these steps:
+
+                                    <ol>
+                                        <li>Upload your desired image or design.</li>
+                                        <li>Use our intuitive tools to position, resize, and rotate your image.</li>
+                                        <li>Preview your design and make any necessary adjustments.</li>
+                                        <li>Once you're satisfied, add the customized cover to your cart and proceed to checkout.</li>
+                                    </ol>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                  <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Can I customize both the front and back covers of the notebook?
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                  <div class="accordion-body fs-7 fw-500 pt-0">
+                                    Yes, you can customize both the front and back covers of the notebook separately. 
+                                    Simply upload your desired images or designs for each cover during the customization process.
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                                  <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                                    How long does it take to receive my customized notebook cover?
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+                                  <div class="accordion-body fs-7 fw-500 pt-0">
+                                    Production and shipping times may vary depending on your location and the complexity of your customization. 
+                                    Typically, orders are processed within 2-3 business days, and shipping times range from 3-7 business days. 
+                                    You will receive a tracking number once your order has been shipped.
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                                  <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                                    Can I order name slips in bulk for my business or event?
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+                                  <div class="accordion-body fs-7 fw-500 pt-0">
+                                    Yes, we offer bulk ordering options for name slips. Please contact our customer support team for assistance 
+                                    with bulk orders, including customization options, pricing, and delivery timelines.
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                                  <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                                    How can I contact customer support for further assistance?
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix">
+                                  <div class="accordion-body fs-7 fw-500 pt-0">
+                                    You can contact our customer support team by emailing support@futurelegend.com or filling out the contact form 
+                                    on our website. Our support team is available to assist you with any questions or concerns you may have regarding 
+                                    customization, orders, or general inquiries.
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------>
+    <!------ FAQ section End------>
+    <!------------------------------>    
+    
+    <!------------------------------>
+    <!-----Contact section Start---->
+    <!------------------------------>
+    <section class="contact bg-primary position-relative overflow-hidden" id="contact">
+        <div class="container position-relative">
+            <div class="dots-shape-left position-absolute"><img src="assets/images/icons/dot-shape.png"></div>
+            <div class="dots-shape-right position-absolute"><img src="assets/images/icons/dot-shape.png"></div>
+            <div class="row">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                    <small class="fs-7 d-block text-warning text-center">Testimonials</small>
+                    <h2 class="fs-3 text-white mb-0">What Our Customers Say</h2>
+                    <div class="owl-carousel owl-theme testimonial">
+                        <div class="item">
+                            <div class="details position-relative">
+                                <p class="fs-5 fw-light blue-light mb-4">
+                                    "Future Legend made designing my notebook cover a breeze! The final product exceeded my expectations. Highly recommend!"
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avtar-img rounded-circle overflow-hidden"><img src="https://i.postimg.cc/26YP13tL/user.avif" class="img-fluid"></div>
+                                    <div class="name ps-3">
+                                        <h6 class="text-white">Name</h6>
+                                        <small class="d-block blue-light fw-500 fs-10 pb-0">Location</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="details position-relative">
+                                <p class="fs-5 fw-light blue-light mb-4">
+                                    "Impressed by the quality and ease of customization at Future Legend. My personalized name slips were a hit with my students!"
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <div class="avtar-img rounded-circle overflow-hidden"><img src="https://i.postimg.cc/26YP13tL/user.avif" class="img-fluid"></div>
+                                    <div class="name ps-3">
+                                        <h6 class="text-white">Name</h6>
+                                        <small class="d-block blue-light fw-500 fs-10 pb-0">Location</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <small class="fs-7 d-block text-warning text-center">Contact Now</small>
+                    <form class="position-relative">
+                        <div class="row ps-xxl-5 ps-xl-5 ps-lg-3 ps-md-0 ps-sm-0 ps-0">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">Full Name</label>
+                                    <input type="text" class="form-control border-0" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">Mobile number</label>
+                                    <input type="text" class="form-control border-0" placeholder="Enter your mobile number">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">Subject</label>
+                                    <input type="email" class="form-control border-0" placeholder="Enter subject">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label text-white fs-7 mb-3">Message</label>
+                                    <textarea class="form-control border-0" placeholder="Enter your message"></textarea>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-12">
+                                <button class="btn btn-warning btn-hover-secondery text-capitalize mt-2 w-auto contact-btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>       
+    <!------------------------------>
+    <!-----Contact section End----->
+    <!------------------------------>
+
+    <!------------------------------>
+    <!-----Footer Start------------->
+    <!------------------------------>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="footer-logo-col">
+                        <a href="#"><img src="assets/images/logo.png" width="200"></a>
+                    </div>
+                </div>
+                
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Links</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#" >Refund & Return policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h5 class="text-white">Connect</h5>
+                    <ul class="list-unstyled mb-0 pl-0">
+                        <li style="line-height: 1.7;"><a href="#"><i class="fa-solid fa-location-dot"></i> CCRA-15, Kumbalapilly Road, <br> Chalikkavattom, Kochi - 682028</a></li>
+                        <li><a href="mailto:future.legend2025@gmail.com"><i class="fa fa-envelope"></i> future.legend2025@gmail.com</a></li>
+                        <li><a href="tel:+919745530072"><i class="fa fa-phone"></i> +91 9745530072</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center py-3">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp fa-2x text-white mx-2"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram fa-2x text-white mx-2"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook fa-2x text-white mx-2"></i>
+                </a>
+            </div>
+            <div class="copyrights text-center blue-light  fw-500">@<span id="autodate">2024</span> - All Rights Reserved by Future Legend</div>
+        </div>
+    </footer>
+    <!------------------------------>
+    <!-------Footer End------------->
+    <!------------------------------>
+
+   
+    <style>
+        .e-card {
+        background: transparent;
+        box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+        position: relative;
+        height: 150px;
+        border-radius: 16px;
+        overflow: hidden;
+        /* border: .5px solid #6c6c6c; */
+        }
+        .wave2{
+            background: linear-gradient(744deg,#ffaf03,#f3c742 60%,#e7eb00) !important;
+        }
+
+        .wave {
+        position: absolute;
+        width: 640px;
+        height: 700px;
+        opacity: 0.6;
+        left: 0;
+        top: 0;
+        margin-left: -50%;
+        margin-top: -70%;
+        background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+        }
+
+        .icon {
+        width: 3em;
+        margin-top: -1em;
+        padding-bottom: 1em;
+        }
+
+        .infotop {
+        text-align: center;
+        font-size: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        }
+
+        .name {
+        font-size: 14px;
+        font-weight: 100;
+        position: relative;
+        text-transform: lowercase;
+        }
+
+        .wave:nth-child(2),
+        .wave:nth-child(3) {
+        top: 210px;
+        }
+
+        .playing .wave {
+        border-radius: 40%;
+        animation: wave 3000ms infinite linear;
+        }
+
+        .wave {
+        border-radius: 40%;
+        animation: wave 55s infinite linear;
+        }
+
+        .playing .wave:nth-child(2) {
+        animation-duration: 4000ms;
+        }
+
+        .wave:nth-child(2) {
+        animation-duration: 50s;
+        }
+
+        .playing .wave:nth-child(3) {
+        animation-duration: 5000ms;
+        }
+
+        .wave:nth-child(3) {
+        animation-duration: 45s;
+        }
+
+        @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+
+        .e-card:hover{
+            transform: scale(0.97);
+            transition: .3s;
+        }
+    </style>
+    <!-- Select type Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background: rgb(255, 255, 255); border-radius: 30px;">
+                
+                <div class="modal-body p-4">
+                    <h4 class="text-center mb-4" style="color: rgb(184, 184, 184);"><b>Choose Your Choice</b></h4>
+
+                    <a href="notebook.html" class="sel">
+                        <div class="e-card playing my-2">
+                            <div class="image"></div>
+                            
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            
+                          
+                            <div class="infotop p-4">
+                                <div class="name">Notebook Designing</div>
+                                <h3>Personalize Your Note Book Cover</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="nameslip.html" class="sel">
+                        <div class="e-card playing my-4">
+                            <div class="image"></div>
+                            
+                            <div class="wave wave2"></div>
+                            <div class="wave wave2"></div>
+                            <div class="wave wave2"></div>
+                            
+                          
+                            <div class="infotop p-4">
+                                <div class="name">Nameslip Designing</div>
+                                <h3>Make Your Mark With Custom Nameslips</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <style>
+        .login {
+        color: #e8e8e8;
+        font-size: 1.3em;
+        }
+
+.login input[type="text"],
+.login input[type="password"] {
+  opacity: 1;
+  display: block;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 13px 18px;
+  font-size: 0.8em;
+  border-radius: 100px;
+  background: #eeeeee;
+  color: #6e6e6e;
+}
+
+.login input:focus {
+  animation: bounce 1s;
+  -webkit-appearance: none;
+}
+
+.login input[type=submit],
+.login input[type=button],
+.h1 {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 13px;
+  margin: 30px 0 0 0;
+  border-radius: 500px;
+  font-weight: 700;
+  animation: bounce2 1.6s;
+}
+
+.h1 {
+  position: relative;
+  top: -45px;
+  display: block;
+  margin-bottom: -0px;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+
+.login input[type=text] {
+  animation: bounce 1s;
+  -webkit-appearance: none;
+}
+
+.login input[type=password] {
+  animation: bounce1 1.3s;
+}
+
+.btn2{
+    background: black;
+    color: #fff;
+}
+
+.reg{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    animation: bounce1 1.5s;
+}
+
+.forgot{
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+    margin-top: 10px;
+    margin-left: 10px;
+    animation: bounce1 1.5s;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce1 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+    </style>
+    <!-- login modal -->
+    <div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+               
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <div class="h1">Log in</div>
+                        <input placeholder="Email" id="email" name="email" type="text">
+                        <input placeholder="Password" id="password" class="mt-3" name="password" type="password">
+                        <p class="forgot" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterEmail">Forgot password?</p>
+                        <input value="Login" class="btn2 py-4" type="submit">
+
+                        <p class="reg mt-5">Don't have an account? <a href="" style="text-decoration: none;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterRegister"><b>Register</b></a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Register modal -->
+    <div class="modal fade" id="exampleModalCenterRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+               
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <div class="h1">Register Now</div>
+                        <input placeholder="Email" id="email" name="email" type="text">
+                        <input placeholder="Password" id="password" class="mt-3" name="password" type="password">
+                        <input placeholder="Confirm Password" id="password" class="mt-3" name="password" type="password">
+                        <input value="Register" class="btn2 py-4" type="submit">
+
+                        <p class="reg mt-5">Already have an account? <a href="" style="text-decoration: none;" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterLogin"><b>Login</b></a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot password, email modal -->
+    <div class="modal fade" id="exampleModalCenterEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <h3 class="text-center mb-4">Verify Email</h3>
+                        <input placeholder="Registered Email" id="email" name="email" type="text">
+                        <input value="Send OTP" class="btn2 py-4" type="submit" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterOTP">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .password2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        }
+        .password2 input {
+        width: 30px;
+        height: 40px;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        border-bottom: solid 2px rgb(20, 181, 230);
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+        outline: none;
+        }
+    </style>
+    <!-- Forgot password, email confirmation using otp modal -->
+    <div class="modal fade" id="exampleModalCenterOTP" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <h3 class="text-center mb-4">Enter OTP</h3>
+                        <div class="password2">
+                            <input maxlength="1" value="5" class="input" name="text" type="text" />
+                            <input maxlength="1" value="7" class="input" name="text" type="text" />
+                            <input maxlength="1" value="1" class="input" name="text" type="text" />
+                            <input maxlength="1" value="6" class="input" name="text" type="text" />
+                            
+                        </div>
+                          
+                        <input value="Confirm" class="btn2 py-4" type="submit" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterReset">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot password, email modal -->
+    <div class="modal fade" id="exampleModalCenterReset" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="border-radius: 30px; border: .5px solid #ffffff;">
+                <div class="modal-body m-body">
+                    <div class="login wrap p-3 p-md-5">
+                        <h3 class="text-center mb-4">Reset Password</h3>
+                        <input placeholder="Enter new password" id="password" name="password" type="password">
+                        <input placeholder="Confirm password" class="mt-3" id="password" name="password" type="password">
+                        <input value="Reset Password" class="btn2 py-4" type="submit" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModalCenterOTP">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="assets/libs/OwlCarousel-2/dist/owl.carousel.min.js"></script>
+    <script src="dist/js/custom.js"></script>
+
+</body>
+</html>
